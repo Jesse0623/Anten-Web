@@ -1,0 +1,41 @@
+<input type="text" id="mytextbox" class="myclass">
+<input onclick="myfunction(event)" type="button" id="mybutton" value="click me" class="myclass">
+
+
+<script type="text/javascript">
+
+	function myfunction(e){
+		alert(e.target.id);
+		
+		/*var elements = document.getElementsByClassName("myclass");
+	
+		//the for loop shows all the two id in the elements
+		for (var i = elements.length - 1; i>=0; i--){
+			alert(elements[i].id);
+		}
+       */
+	}
+
+ 	var element = document.getElementById("mybutton");
+	
+	/*element.addEventListener("click",function(event){
+  		alert(event.target.id);
+	});
+	*/
+	//myfunction();
+	//alert(elements[0].id);
+	//elements[1] the second element
+	//in the document get an element using the ID of mytextbox
+	//the element "mytextbox" will be push insdie the cariable element
+	/*element.setAttribute("type", "button");
+	element.setAttribute("value","click me also");
+	console.Log(element.getAttribute("type"));
+	*/
+	//console.Log (the text won't pop out on the screen)
+	//alert() the text will pop on the screen. 
+	//.type show me the value of the property "type"
+	//getAttribute becuase myattr is something I created, so in order to get its attribute, I used getAttribute. 
+	
+
+
+</script>
